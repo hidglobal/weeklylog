@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+@if (Request.IsAuthenticated)
+{
+    <h1>Hello, @User.Identity.Name !</h1>
+}
+else
+{
+    <h1>Hello,</h1>
+}
+    <p class="lead">ActivID Tap provides an easy and secure method to access Web Sites.</p>
+    <p><a href="http://www.hidglobal.com/products/software/activid" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
